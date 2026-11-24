@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Discover Morocco</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-teal-900 text-white px-8 py-5 flex justify-between items-center flex-wrap">
+
+        <h1 class="text-3xl font-bold">TravelGo.</h1>
+
+        <div class="flex items-center gap-6 flex-wrap">
+            <a href="#home" class="hover:text-teal-300">Home</a>
+            <a href="#destinations" class="hover:text-teal-300">Destinations</a>
+            <a href="#about" class="hover:text-teal-300">About</a>
+
+            <button onclick="contact()"
+                class="bg-white text-teal-900 px-5 py-2 rounded-lg hover:bg-teal-100">
+                Contact
+            </button>
+        </div>
+
+    </nav>
+    <section id="home"
+        class="mx-5 my-5 h-80 bg-cover bg-center flex justify-center items-center text-center text-white rounded-xl"
+        style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200')">
+
+        <div>
+            <h1 class="text-4xl font-bold mb-4">
+                Discover Morocco
+            </h1>
+
+            <p class="text-lg mb-6">
+                Your next adventure starts here.
+            </p>
+
+            <button onclick="welcome()"
+                class="bg-teal-900 px-8 py-3 rounded-lg hover:bg-teal-700">
+                Get Started
+            </button>
+        </div>
+
+    </section>
+
+    <section id="destinations" class="px-8 py-12">
+
+        <h2 class="text-3xl font-bold text-teal-900 text-center mb-10">
+            Popular destinations
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+ 
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:-translate-y-2 transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=600"
+                    alt="Marrakech"
+                    class="w-full h-48 object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold mt-4">
+                    Marrakech
+                </h3>
+
+                <p class="text-teal-900 font-bold my-3">
+                    500 DH
+                </p>
+
+                <button onclick="bookMarrakech()"
+                    class="bg-teal-900 text-white w-full py-3 rounded-lg hover:bg-teal-700">
+                    Book now
+                </button>
+
+            </div>
+
+            <!-- Chefchaouen -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:-translate-y-2 transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600"
+                    alt="Chefchaouen"
+                    class="w-full h-48 object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold mt-4">
+                    Chefchaouen
+                </h3>
+
+                <p class="text-teal-900 font-bold my-3">
+                    700 DH
+                </p>
+
+                <button onclick="bookChefchaouen()"
+                    class="bg-teal-900 text-white w-full py-3 rounded-lg hover:bg-teal-700">
+                    Book now
+                </button>
+
+            </div>
+
+            <!-- Agadir -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:-translate-y-2 transition">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=600"
+                    alt="Agadir"
+                    class="w-full h-48 object-cover rounded-lg">
+
+                <h3 class="text-xl font-bold mt-4">
+                    Agadir
+                </h3>
+
+                <p class="text-teal-900 font-bold my-3">
+                    600 DH
+                </p>
+
+                <button onclick="bookAgadir()"
+                    class="bg-teal-900 text-white w-full py-3 rounded-lg hover:bg-teal-700">
+                    Book now
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="about" class="text-center py-12 px-5">
+
+        <h2 class="text-3xl font-bold text-teal-900 mb-5">
+            About us
+        </h2>
+
+        <p class="text-gray-600 text-lg">
+            We help you discover beautiful destinations in Morocco.
+        </p>
+
+    </section>
+
+    <footer class="bg-teal-900 text-white text-center py-5">
+
+        <p>© 2026 TravelGo</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
